@@ -40,6 +40,14 @@ public class Principal {
         } catch (ArithmeticException e) {
             System.out.println("Error: " + e.getMessage());
         }
+        
+       // Nueva funcionalidad agregada en este commit: módulo
+        try {
+            int resultadoModulo = calc.modulo(10, 3);
+            System.out.println("Módulo: 10 % 3 = " + resultadoModulo);
+        } catch (ArithmeticException e) {
+            System.out.println("Error al calcular el módulo: " + e.getMessage());
+        }
 	}
 
 }

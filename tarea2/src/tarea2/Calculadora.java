@@ -30,4 +30,11 @@ public class Calculadora {
         }
         return Math.sqrt(numero);
     }
+    
+    public int modulo(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("No se puede calcular el módulo con divisor cero");
+        }
+        return a % b;
+    }
 }
