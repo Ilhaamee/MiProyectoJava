@@ -19,7 +19,15 @@ public class Calculadora {
         }
         return (double) a / b;
     }
+    
     public int potencia(int base, int exponente) {
         return (int) Math.pow(base, exponente);
+    }
+    
+    public double raizCuadrada(double numero) {
+        if (numero < 0) {
+            throw new ArithmeticException("No se puede calcular la raíz cuadrada de un número negativo");
+        }
+        return Math.sqrt(numero);
     }
 }

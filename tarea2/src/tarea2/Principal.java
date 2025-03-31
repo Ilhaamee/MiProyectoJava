@@ -32,6 +32,14 @@ public class Principal {
         System.out.println("Resultado de la potencia 2^3: " + resultadoPotencia);
         
         System.out.println("Gracias por usar la Calculadora.");
+        
+       // Nueva funcionalidad agregada en este commit
+        try {
+            double resultadoRaiz = calc.raizCuadrada(16);
+            System.out.println("Raíz cuadrada de 16: " + resultadoRaiz);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
 	}
 
 }
