@@ -19,7 +19,8 @@ public class Principal {
         } catch (ArithmeticException e) {
             System.out.println("Error: " + e.getMessage());
         }
-      
+        
+        System.out.println("Gracias por usar la Calculadora.");
 	}
 
 }
