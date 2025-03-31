@@ -12,6 +12,13 @@ public class Principal {
         
         int resultadoMultip = calc.multiplicar(3, 4);
         System.out.println("Resultado de la multiplicación: " + resultadoMultip);
+        
+        try {
+            double resultadoDivision = calc.dividir(10, 0);
+            System.out.println("Resultado de la división: " + resultadoDivision);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
       
 	}
 
