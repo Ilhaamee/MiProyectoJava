@@ -19,4 +19,7 @@ public class Calculadora {
         }
         return (double) a / b;
     }
+    public int potencia(int base, int exponente) {
+        return (int) Math.pow(base, exponente);
+    }
 }
