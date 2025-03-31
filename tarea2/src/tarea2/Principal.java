@@ -20,6 +20,9 @@ public class Principal {
             System.out.println("Error: " + e.getMessage());
         }
         
+        int resultadoPotencia = calc.potencia(2, 3);
+        System.out.println("Resultado de la potencia 2^3: " + resultadoPotencia);
+        
         System.out.println("Gracias por usar la Calculadora.");
 	}
 
